@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Search = props => {
+const Search = ({ getQuery, query }) => {
   return (
     <div className="ui search">
       <div className="ui icon input">
-        <input className="prompt"/>
+        <input className="prompt" value={query} onChange={getQuery} />
         <i className="search icon" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;
